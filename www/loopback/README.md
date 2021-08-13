@@ -1,12 +1,12 @@
 # Loopback Connector for AWS Neptune Test Development Kit
 
-This is the test kit repository for **Loopback Neptune Connector**, what uses Gremlin language to communicate to Cloud
+This is the test kit repository for **Loopback Neptune Connector**, what uses Gremlin language to communicate to Cloud 
 Service.
 
 To simulate AWS Neptune we're using Apache TinkerPOP Gremlin Server.
 
 ---
-**NOTE** that AWS Neptune has some limitations and differences from default TinkerPOP Server, we've tried to
+**NOTE** that AWS Neptune has some limitations and differences from default TinkerPOP Server, we've tried to 
 configure TinkerPOP as similar as possible to emulate AWS Neptune, but this environment was created to make
 developers lives easier when coding, but before committing and/or creating a pull request, please run your tests
 using a real AWS Neptune Instance.
@@ -71,5 +71,4 @@ These tests don't cover all methods yet, and would be great if you could collabo
 and creating a pull request to the original repository.
 
 **JOIN THE TEAM**
-
 

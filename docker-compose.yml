@@ -1,0 +1,38 @@
+version: "3"
+services:
+
+  neptune.docker:
+    container_name: "neptune_gremlin"
+    image: neptune_gremlin
+    volumes:
+      - ./:/app/
+    expose:
+      - 8182
+      - 7474
+      - 7687
+    ports:
+      - 8182:8182
+      - 7474:7474
+      - 7687:7687
+    command: "/./app/docker/neptune/start.sh"
+
+  api.docker:
+    container_name: "neptune_loopback"
+    image: neptune_loopback
+    user: root
+    working_dir: /app/www/loopback/
+    environment:
+      NODE_ENV: "development"
+    volumes:
+      - ./:/app/
+    expose:
+      - 3001
+      - 3000
+      - 3010
+    ports:
+      - 3001:3001
+      - 3000:3000
+      - 3010:3010
+    env_file:
+      - docker/loopback/docker.env
+    command: "/./app/docker/loopback/start.sh"
