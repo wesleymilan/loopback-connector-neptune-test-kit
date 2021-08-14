@@ -53,18 +53,20 @@
     "@loopback/rest": "^10.0.0",
     "@loopback/rest-explorer": "^3.3.2",
     "@loopback/service-proxy": "^3.2.2",
-    "@types/async": "^3.2.7",
-    "@types/gremlin": "^3.4.6",
     "async": "^0.9.2",
     "gremlin": "^3.5.1",
-    "loopback-connector-neptune": "file:../loopback-connector-neptune",
-    "tslib": "^2.0.0"
+    "loopback-connector-neptune": "file:../../library/loopback-connector-neptune",
+    "tslib": "^2.0.0",
+    "uuid": "^8.3.2"
   },
   "devDependencies": {
     "@loopback/build": "^7.0.0",
     "@loopback/eslint-config": "^11.0.0",
     "@loopback/testlab": "^3.4.2",
+    "@types/async": "^3.2.7",
+    "@types/gremlin": "^3.4.6",
     "@types/node": "^10.17.60",
+    "@types/uuid": "^8.3.1",
     "eslint": "^7.29.0",
     "source-map-support": "^0.5.19",
     "typescript": "~4.3.4"

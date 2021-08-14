@@ -10,8 +10,6 @@ const config = {
   iam: process.env.NEPTUNE_IAM,
   database: process.env.NEPTUNE_DB,
   transactionClearTimeout: 5000,
-  user: process.env.NEPTUNE_USER,
-  password: process.env.NEPTUNE_PASS
 };
 
 // Observe application's life cycle to disconnect the datasource when
