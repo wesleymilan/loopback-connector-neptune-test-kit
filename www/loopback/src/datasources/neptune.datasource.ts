@@ -8,7 +8,7 @@ const config = {
   host: process.env.NEPTUNE_HOST,
   port: process.env.NEPTUNE_PORT,
   iam: process.env.NEPTUNE_IAM,
-  database: process.env.NEPTUNE_DB,
+  secure: false,
   transactionClearTimeout: 5000,
 };
 
